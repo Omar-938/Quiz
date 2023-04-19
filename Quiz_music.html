@@ -1,27 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style_mobile.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <title>Quiz Musique</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz super top</title>
+  <link rel="stylesheet" href="style_mobile.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <!-- Header avec lien vers la Home -->
+
+
+            <!-- Header avec lien vers la Home -->
             
-    <header>
-        <a href="index.html">
-        <img src="ressources/Logo.png" alt="logo">
-         </a>
-         <h1>Train Code quiz</h1>
-         <span> burger</span>
--
+        <header>
+
+            <div class="top">
+
+                <div class="logotop"><a href="index.html">
+                    <img src="ressources/Logo.png" alt="logo"></div>
+            
+                 </a>
+                 <h1>Train Code quiz</h1>
+                 <div class="navbar-mobile">
+                    <i class="fas fa-bars"></i>
+                    <div class="modal">
+                        <div class="navbar-mobile-list">
+                            <form id="formulaire">
+
+                                <h2>Si vous avez des améliorations à nous suggérer ou des nouveaux thémes de quiz à nous proposer</h2>
+                          <div>
+                              <label for="name">Nom</label><br/>
+                              <input type="text" id="name">
+                          </div>
+                          <div>
+                              <label for="email">Email</label><br/>
+                              <input type="email" id="email">
+                          </div>
+                          <div>
+                              <label for="message">Message</label><br/>
+                              <textarea id="message" rows="10"></textarea>
+                          </div>
+              
+                          <button type="submit" class="envoi">Envoyer</button>
+              
+                         
+                      </form>
+                      <script>
+                        const message = "Merci mais on s'en fout 🤪 ";
+                        document
+                          .getElementById("formulaire")
+                          .addEventListener("submit", function (event) {
+                            event.preventDefault();
+                            alert(message);
+                          });
+                      </script>
+                    </div>
+                    </div>
     
-    </header>
+                </div>
+        
+        </header>
 
     <main class="quizpage">
         <img class="image-principale" src="ressources/music.png" alt="Question" />
@@ -93,6 +137,6 @@
         
          
         
-<script src="script_music.js"></script>
+<script src="scriptsTech.js"></script>
 </body>
 </html> 
