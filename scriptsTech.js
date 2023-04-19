@@ -1,23 +1,23 @@
 const bq1 = document.querySelector('#bq1');
 const bq2 = document.querySelector('#bq2');
 const bq3 = document.querySelector('#bq3');
-const bq4 = document.querySelector('#bq3');
+const bq4 = document.querySelector('#bq4');
 const question4 = document.querySelector('#question4');
 const question3 = document.querySelector('#question3');
 const question2 = document.querySelector('#question2');
 const question1 = document.querySelector("#question1");
 const goodq = document.querySelector("#goodq");
-const gooq2 = document.querySelector("#goodq2");
-const gooq3 = document.querySelector("#goodq3");
+const goodq2 = document.querySelector("#goodq2");
+const goodq3 = document.querySelector("#goodq3");
 const goodq4 = document.querySelector("#goodq4");
 const rep = document.getElementsByClassName('rep');
 const rep2 = document.getElementsByClassName('rep2');
 const rep3 = document.getElementsByClassName('rep3');
 const rep4 = document.getElementsByClassName('rep4');
-const thomas = document.querySelector('#Thomas');
 
 
-
+              
+ 
 /* question 1 vers question 2*/
 
 
@@ -81,9 +81,7 @@ rep[i].addEventListener('click',function(event){
 /* question 3 vers 4 */
 
 
-thomas.addEventListener('click', function(){
-    window.alert("Il vous ment depuis le début c'est bien lui l'inventeur !!!")
-})
+
 
 for(let i = 0; i < rep3.length; i++){  
     rep3[i].addEventListener('click',function(event){
@@ -98,7 +96,7 @@ for(let i = 0; i < rep3.length; i++){
         } else {
             console.log("mauvaise réponse !!");
             rep3[i].style.backgroundColor = 'red';
-            
+               
             
         } 
     })
@@ -129,4 +127,4 @@ for(let i = 0; i < rep3.length; i++){
     /* Question 5 vers 6 */
 
 
-    
+     
