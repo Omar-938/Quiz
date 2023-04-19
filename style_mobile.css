@@ -72,27 +72,21 @@ h4 {
     transition: top 2s;
     background-color:#333333;
     height: 100vh;
-    position: fixed;
+    position: absolute;
     top: -100vh;
     left: 0;
     width: 100%;
-    opacity: 0.9;
+    opacity: 1;
 }
  
 .navbar-mobile .navbar-mobile-list{
-   
-    height: 100vh;
-    
+   display: flex;
+    height: 100%;
     align-items: center;
     justify-content: center;
 }
-.navbar-mobile .navbar-mobile-list a{
-    font-size: 3.5rem;
-    font-weight: 800;
-    color: #fefcfc;
-    padding: 2rem;
-    text-decoration: none;
-}
+
+
 .change-modal{
     top:80px;
     
@@ -234,11 +228,9 @@ main h2{
 #formulaire{
     display: flex;
     flex-direction: column;
-    margin-top: 15%;
-    background-color: whitesmoke;
+    background-color: black;
     border-radius: 10px 10px 10px;
-    margin-bottom: 5%;
-    
+    height: 100%;
 }
 
 form label{
