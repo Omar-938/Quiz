@@ -19,10 +19,19 @@ const rep3 = document.getElementsByClassName('rep3');
 const rep4 = document.getElementsByClassName('rep4');
 const rep5 = document.getElementsByClassName('rep5');
 const thomas = document.querySelector('#Thomas');
-const resultatFinal = document.querySelector("#ResultatFinalCarte")
+const resultatFinal = document.querySelector("#ResultatFinalCarte");
+let score = document.querySelector(".score")
+
+let scoreFinal = 0 ;
+let scoreFinal2= 0 ;
+let scoreFinal3= 0 ;
+let scoreFinal4= 0 ;
+let scoreFinal5= 0 ;
+
+
+
+
 /* formulaire */
-
-
 
 //Nav Barre / Burger 
 
@@ -56,9 +65,13 @@ rep[i].addEventListener('click',function(event){
     event.preventDefault(); 
     if (rep[i].innerHTML === goodq.innerHTML){
         goodq.style.backgroundColor = 'green';
+        scoreFinal = 1
+        score.innerHTML = scoreFinal;
         bq1.addEventListener('click', function(){
             question1.style.display = 'none';
             question2.style.display = 'initial';
+            
+           
             
             
         })
@@ -88,9 +101,12 @@ rep[i].addEventListener('click',function(event){
         event.preventDefault(); 
         if (rep2[i].innerHTML === goodq2.innerHTML){
             goodq2.style.backgroundColor = 'green';
+            scoreFinal2 = scoreFinal + 1;
+            score.innerHTML = scoreFinal2 ;
             bq2.addEventListener('click', function(){
                 question2.style.display = 'none';
                 question3.style.display = 'initial';
+                
                 
             })
         } else {
@@ -123,6 +139,8 @@ for(let i = 0; i < rep3.length; i++){
         if (rep3[i].innerHTML === goodq3.innerHTML){
             console.log('bonne réponse!!');
             goodq3.style.backgroundColor = 'green';
+            scoreFinal3 = scoreFinal2 + 1;
+            score.innerHTML = scoreFinal3 ;
             bq3.addEventListener('click', function(){
                 question3.style.display = 'none';
                 question4.style.display = 'initial';
@@ -147,9 +165,12 @@ for(let i = 0; i < rep3.length; i++){
         rep4[i].addEventListener('click',function(){
             if (rep4[i].innerHTML === goodq4.innerHTML){
                 goodq4.style.backgroundColor = 'green';
+                scoreFinal4 = scoreFinal3 + 1;
+            score.innerHTML = scoreFinal4 ;
                 bq4.addEventListener('click', function(){
                     question4.style.display = 'none';
                     question5.style.display = 'initial';
+                    
                 })
             } else {
                 rep4[i].style.backgroundColor = 'red';
@@ -173,9 +194,12 @@ for(let i = 0; i < rep3.length; i++){
         rep5[i].addEventListener('click',function(){
             if (rep5[i].innerHTML === goodq5.innerHTML){
                 goodq5.style.backgroundColor = 'green';
+                scoreFinal5 = scoreFinal4 + 1;
+            score.innerHTML = scoreFinal5 ;
                 bq5.addEventListener('click', function(){
                     question5.style.display = 'none';
                     resultatFinal.style.display = 'initial';
+
                 })
             } else {
                 rep5[i].style.backgroundColor = 'red';
@@ -188,5 +212,7 @@ for(let i = 0; i < rep3.length; i++){
                 
             } 
         })
-        
+
           }
+
+          score.innerHTML = scoreFinal + scoreFinal2;

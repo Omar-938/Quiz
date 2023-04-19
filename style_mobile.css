@@ -445,8 +445,11 @@ button {float:right;
 #question5{
     display: none;
 }
-
-
+/*
+#question1{
+    display: none;
+}
+*/
 #carteResultat{
 
     text-align: center;
