@@ -1,0 +1,439 @@
+body{
+    margin: 0;
+   font-family: 'Roboto', sans-serif;
+   background-color: black;
+   
+}
+
+
+#footer{                                                    /* background-color: #516079;*/
+	height:7%;   
+    background-color: #333333;
+    width: 100%;
+    color: white;                                               /*changement couleur en white*/
+   /* position: fixed;
+    bottom: 0;*/
+    }   
+
+#footerContact{                                              /* background-color: #516079;*/
+    height:7%;   
+    background-color: #333333;
+    width: 100%;
+    /*position: fixed;
+    bottom: 0;*/
+    color: white;
+
+}
+footer ul{
+	display: flex;
+	list-style-type: none;
+	justify-content: center;
+	
+}	
+footer li {	
+	padding-right:10px ;
+	padding-top: 5px;
+}
+
+footer img{
+	width: 20px;
+}
+h4 {
+	text-align: center;
+	font-size: 0.8em;
+	
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* Header */
+
+header{
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#333333;
+    color: white;
+    padding: 10px;
+   
+}
+header img{
+    height: 40px;
+    width: 57.5px;
+}
+
+header h1{
+    text-align: center;
+    color: white;
+    text-shadow: 5px 5px 5px gray;
+    padding-right: 12%;
+}
+	
+	
+	
+
+.logo{
+	width: 10%;
+	height: 10%;
+	align-self: center;
+}
+
+	
+
+
+/*main*/
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    
+}
+main>h1{
+    text-align: center;
+    padding: 1.5rem;
+}
+main h2{
+    text-align: center;
+    color: #5308eb;
+    font-size: 3em;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+.quizpage img{                                                      /*Ajout Margin-top */
+    margin-top: 5%;
+}
+
+.carte {
+    width: 85%;
+    height: 450px;
+    display: flex;
+    margin-bottom: .9rem;
+    margin-top: .9rem;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: row;
+    border: solid 4px #fff;
+    justify-content: space-evenly;
+    background-size: cover;
+    background-color: whitesmoke;
+    border-radius: 10px 10px 10px;
+    box-shadow: 0 0 12px #ffffff,
+    inset 0 0 12px #858585                                      /*Ajout effet neon */
+}
+
+
+.quiz
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+
+}
+
+.image
+{
+
+    width: 90%;
+    height: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 7px 7px 7px;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 10px;
+    box-shadow: 0px 0px 7px gray;
+}
+
+.description {
+    text-align: center;
+    height: 20%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 7px 7px 7px;
+    box-shadow: 0px 0px 5px gray;
+    cursor: pointer;
+    background-color: rgb(212, 209, 209);
+
+}
+.description h3{
+    margin-top: 5%;
+    margin-bottom: 0.5rem;
+}
+
+.description a{
+    text-decoration: none;
+    color: black;
+}
+
+.description:hover{
+    background-color: rgb(166, 166, 166);
+    transform: scale(1.1);
+}
+
+
+
+                    /* Formulaire */
+
+
+#formulaire{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15%;
+    background-color: whitesmoke;
+    border-radius: 10px 10px 10px;
+    margin-bottom: 5%;
+    
+}
+
+form label{
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding-top: 0.5rem;
+}
+#formulaire h2{
+    text-align: center;
+    width: 90%;
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem;
+    font-size: 2em;
+    
+}
+
+#name{
+    display: block;
+    margin: auto;
+    width: 70%;
+    border-radius: 10px 10px 10px;
+    
+}
+
+#email{
+    display: block;
+    margin: auto;
+    width: 70%;
+    border-radius: 10px 10px 10px;
+}
+
+#message{
+    display: block;
+    margin: auto;
+    width: 70%;
+    border-radius: 10px 10px 10px;
+}
+
+.envoi{
+    display: block;
+    margin-top: 3rem;
+    width: 70%;
+    margin-left: 15%;
+    border-radius: 7px 7px 7px;
+
+}
+form{
+    width: 90%;
+    display: block;
+    margin: auto;
+    
+}
+input, textarea{
+    background-color: rgb(224, 219, 219);
+    border: none;
+    width: 90%;
+    resize : none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+ }
+
+
+textarea{
+    border-radius: 5px  ;
+
+}
+input{
+    height: 40px;
+    border-radius: 10px  ;
+}
+
+
+.envoi {
+
+    background-color: #242324;
+    color: white;
+    font-size: 1em;
+    border-radius: 8px / 8px ;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 10px;
+}
+
+
+
+                    /* Quiz */
+
+.image-principale{
+        width: 80%;
+        height: auto;
+        box-shadow: 10PX 10PX 10PX;
+        display: block;
+        margin: auto;
+}
+
+ /* Style pour le titre */
+ .nom_quiz h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 2rem 0;
+  }
+
+  .cartequestion h3{
+    text-align: center;
+  }
+  /* Style pour les questions */
+  .question {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-left: 5%;
+  }
+
+
+
+  .pquestion{
+    display: block;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  
+  /* Style pour les réponses */
+  .reponses article {
+      border: solid;
+      font-size: 1.2rem;
+      padding: 1rem;
+      border-radius: 5px 5px 5px;
+      cursor: pointer;
+      width: 90%;
+      
+  }
+
+ 
+  /* Style pour le bouton */
+  
+button {float:right;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-right: 5%;
+    border-radius: 15px 15px 15px;
+    width: 25%;
+    height: 5vh;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 70%;
+  
+  }
+
+.quizpage{
+    background-color: black;
+    color: #fff;
+}
+
+/* style des questions */ 
+
+.question_1{
+    display: block;
+    
+}
+
+.cartequestion{
+    border: solid whitesmoke;
+  
+    width: 80%;
+    margin: auto;
+    border-radius: 10px 10px 10px;
+    
+
+}
+
+.reponses{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reponses article{
+    margin: 0.2rem;
+}
+
+#question2{
+    display: none;
+}
+
+
+/* NavBar */
+
+.navbar-mobile{
+    display: block;
+}
+
+.navbar-mobile i{
+    position: fixed;
+    z-index: 9999;
+    top: 18px;
+    right: 15px;
+    font-size: 2.8rem;
+    color: white;
+}
+.modal{
+    transition: top 2s;
+    background-color:#333333;
+    height: 100vh;
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    width: 100%;
+    opacity: 0.9;
+}
+ 
+.navbar-mobile .navbar-mobile-list{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.navbar-mobile .navbar-mobile-list a{
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #fefcfc;
+    padding: 2rem;
+    text-decoration: none;
+}
+.change-modal{
+    top:0;
+    
+}
