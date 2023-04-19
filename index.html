@@ -31,9 +31,35 @@
                     <i class="fas fa-bars"></i>
                     <div class="modal">
                         <div class="navbar-mobile-list">
-                        <a href="Quiz_music.html">Quiz Music</a>
-                        <a href="Quiz_tech.html">Quiz Tech</a>
-                        <a href="Contact.html">Contact</a>
+                            <form id="formulaire">
+
+                                <h2>Si vous avez des améliorations à nous suggérer ou des nouveaux thémes de quiz à nous proposer</h2>
+                          <div>
+                              <label for="name">Nom</label><br/>
+                              <input type="text" id="name">
+                          </div>
+                          <div>
+                              <label for="email">Email</label><br/>
+                              <input type="email" id="email">
+                          </div>
+                          <div>
+                              <label for="message">Message</label><br/>
+                              <textarea id="message" rows="10"></textarea>
+                          </div>
+              
+                          <button type="submit" class="envoi">Envoyer</button>
+              
+                         
+                      </form>
+                      <script>
+                        const message = "Merci mais on s'en fout 🤪 ";
+                        document
+                          .getElementById("formulaire")
+                          .addEventListener("submit", function (event) {
+                            event.preventDefault();
+                            alert(message);
+                          });
+                      </script>
                     </div>
                     </div>
     
