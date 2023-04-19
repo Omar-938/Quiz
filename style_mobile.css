@@ -410,6 +410,14 @@ button {float:right;
 
 }
 
+.ResultatFinal{
+    color: white;
+    background-color:4CAF50;
+    height: 50px;
+    margin-right: 25%;
+    width: 50%;
+}
+
 .reponses{
     display: flex;
     flex-direction: column;
@@ -434,6 +442,33 @@ button {float:right;
     display: none;
 }
 
+#question5{
+    display: none;
+}
 
 
+#carteResultat{
 
+    text-align: center;
+    height: 45vh;
+    margin-bottom: 10%;
+}
+    
+
+#ResultatFinalCarte{
+    display: none;
+}
+
+.divScore{
+    margin-top: 20%;
+    display: block;
+    height: 20%;
+    align-items: center;
+}
+
+.score{
+    
+    color: #4CAF50;
+    font-size: 4em;
+    font-weight: 800;
+}
