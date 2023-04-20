@@ -62,20 +62,12 @@ h4 {
 header{
     background-color:#333333;
     color: white;
-   
-}
+
 
 .top{
     display: flex;
     align-items: center;
-}
-	
-.logotop img{
- width: 50%;
- margin: 5%;
 
- 
- 
 }
    
 .logotop{
@@ -92,7 +84,7 @@ header{
 
 main {
     display: flex;
-    flex-direction: column;
+
     
 }
 main>h1{
@@ -111,7 +103,7 @@ main h2{
 }
 
 .carte {
-    width: 85%;
+
     height: 450px;
     display: flex;
     margin-bottom: .9rem;

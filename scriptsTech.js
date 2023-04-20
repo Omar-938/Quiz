@@ -1,4 +1,4 @@
-const bq1 = document.querySelector('#bq1');
+const b = document.querySelector('#bq1');
 const bq2 = document.querySelector('#bq2');
 const bq3 = document.querySelector('#bq3');
 const bq4 = document.querySelector('#bq4');
