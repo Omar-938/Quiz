@@ -12,3 +12,8 @@ icone.addEventListener('click', function(){
 })
 
 
+const troll = document.querySelector('#troll');
+
+troll.addEventListener('click', function(){
+    window.alert("Ya aucun sportif ici !! Allez oust 🤣 ")
+})

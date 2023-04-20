@@ -70,11 +70,21 @@ header{
 
 }
    
+.top h1{
+    font-size: 3.5em;
+    margin-left: 15%;
+}
 .logotop{
     width: 25%;
-
+    height: 25%;
+    
 }
 
+.logotop img{
+    border-radius: 10%;
+    width: 50%;
+    margin: 5%;
+}
 
 
 
@@ -84,7 +94,8 @@ header{
 
 main {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     
 }
 main>h1{
@@ -93,7 +104,6 @@ main>h1{
 }
 main h2{
     text-align: center;
-    color: #5308eb;
     font-size: 3em;
     margin-top: 3%;
     margin-bottom: 3%;
@@ -104,7 +114,7 @@ main h2{
 
 .carte {
 
-    width: 85%;
+    width: 35%;
     height: 450px;
     display: flex;
     margin-bottom: .9rem;
@@ -188,6 +198,12 @@ main h2{
     background-color: black;
     border-radius: 10px 10px 10px;
     height: 100%;
+}
+
+#formulaireContact{
+    display: flex;
+    flex-direction: column;
+    color: white;
 }
 
 form label{
@@ -277,9 +293,12 @@ input{
 
 
                     /* Quiz */
-
+.quizpage{
+    display: flex;
+    flex-direction: column;
+}
 .image-principale{
-        width: 80%;
+        width: 30%;
         height: auto;
         box-shadow: 10PX 10PX 10PX;
         display: block;
@@ -288,14 +307,20 @@ input{
 
  /* Style pour le titre */
  .nom_quiz h2 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     font-weight: bold;
     text-align: center;
     margin: 2rem 0;
   }
 
+  
+  .pquestion{
+    font-size: 2em;
+  }
+
   .cartequestion h3{
     text-align: center;
+    font-size: 2em;
   }
   /* Style pour les questions */
   .question {
@@ -305,7 +330,37 @@ input{
     margin-left: 5%;
   }
 
+.rep p{
 
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+
+.rep2 p{
+
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+
+.rep3 p{
+
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+.rep4 p{
+
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+.rep5 p{
+
+    font-size: 1.7rem;
+    text-align: center;
+}
 
   .pquestion{
     display: block;
@@ -444,6 +499,8 @@ button {float:right;
     -webkit-text-fill-color: transparent;
     animation: neon 1.5s ease-in-out infinite alternate;
   }
+
+  
   
   @keyframes neon {
     from {
@@ -454,6 +511,28 @@ button {float:right;
     }
   }
 
+  #h2omar{
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #49f3e5, #090804);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: neon 1.5s ease-in-out infinite alternate;
+  }
+
+  
+  
+  @keyframes neon {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #2fd9f4, 0 0 40px #15d1f6, 0 0 70px #10d6f5, 0 0 80px #12b8f5, 0 0 100px #00d5ff;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff0066, 0 0 40px #ffcc33, 0 0 70px #ffcc33, 0 0 80px #ffcc33, 0 0 100px #ffcc33, 0 0 150px #ffcc33;
+    }
+}
+
   .rep {
     transition: transform 0.2s ease-in-out;
     background-color: #242324;
@@ -462,11 +541,49 @@ button {float:right;
   .rep:hover {
     transform: scale(1.05);
   }
-  .button {
+  
+  .rep2 {
     transition: transform 0.2s ease-in-out;
     background-color: #242324;
   }
   
-  .button:hover {
+  .rep2:hover {
+    transform: scale(1.05);
+  }
+
+  .rep3 {
+    transition: transform 0.2s ease-in-out;
+    background-color: #242324;
+  }
+  
+  .rep3:hover {
+    transform: scale(1.05);
+  }
+
+  .rep4 {
+    transition: transform 0.2s ease-in-out;
+    background-color: #242324;
+  }
+  
+  .rep4:hover {
+    transform: scale(1.05);
+  }
+
+
+  .rep5 {
+    transition: transform 0.2s ease-in-out;
+    background-color: #242324;
+  }
+  
+  .rep5:hover {
+    transform: scale(1.05);
+  }
+
+  .collapsible {
+    transition: transform 0.2s ease-in-out;
+    
+  }
+  
+  .collapsible:hover {
     transform: scale(1.1);
   }
