@@ -58,30 +58,21 @@ h4 {
 .navbar-mobile{
     display: none;
 }
- 
 
 header{
     background-color:#333333;
     color: white;
-   }
+}
 
 .top{
     display: flex;
     align-items: center;
- }
- .top h1{
-    font-size: 3.5em;
-    margin-left: 10%;
- }
-	
-.logotop img{
-    width: 50%;
-    margin: 5%;
-    border-radius: 10%;
+
 }
    
 .logotop{
     width: 25%;
+
 }
 
 
@@ -112,6 +103,7 @@ main h2{
 }
 
 .carte {
+
     width: 85%;
     height: 450px;
     display: flex;
