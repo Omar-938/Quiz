@@ -93,8 +93,7 @@ header{
 
 main {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
     
 }
 main>h1{
@@ -113,7 +112,7 @@ main h2{
 }
 
 .carte {
-    width: 35%;
+    width: 85%;
     height: 450px;
     display: flex;
     margin-bottom: .9rem;
@@ -351,6 +350,7 @@ button {float:right;
     text-decoration: none;
     font-size: 16px;
     margin-left: 70%;
+    cursor: pointer;
   
   }
 
@@ -385,11 +385,11 @@ button {float:right;
 }
 
 .reponses{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 0.5rem;
-    justify-content: space-between;
-    align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin: 20px;
+  
 }
 
 .reponses article{
@@ -441,3 +441,40 @@ button {float:right;
     font-size: 4em;
     font-weight: 800;
 }
+
+.quizh2-j{
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #ff0066, #ffcc33);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: neon 1.5s ease-in-out infinite alternate;
+  }
+  
+  @keyframes neon {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff0066, 0 0 40px #ff0066, 0 0 70px #ff0066, 0 0 80px #ff0066, 0 0 100px #ff0066;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff0066, 0 0 40px #ffcc33, 0 0 70px #ffcc33, 0 0 80px #ffcc33, 0 0 100px #ffcc33, 0 0 150px #ffcc33;
+    }
+  }
+
+  .rep {
+    transition: transform 0.2s ease-in-out;
+    background-color: #242324;
+  }
+  
+  .rep:hover {
+    transform: scale(1.05);
+  }
+  .button {
+    transition: transform 0.2s ease-in-out;
+    background-color: #242324;
+  }
+  
+  .button:hover {
+    transform: scale(1.1);
+  }
