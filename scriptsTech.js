@@ -23,10 +23,7 @@ const resultatFinal = document.querySelector("#ResultatFinalCarte");
 let score = document.querySelector(".score")
 
 let scoreFinal = 0 ;
-let scoreFinal2= 0 ;
-let scoreFinal3= 0 ;
-let scoreFinal4= 0 ;
-let scoreFinal5= 0 ;
+
 
 
 
